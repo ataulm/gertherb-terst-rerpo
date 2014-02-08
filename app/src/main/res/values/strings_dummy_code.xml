@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="dummy_code">
+    <item>"package uk.co.ataulm.mijur.base;"</item>
+    <item>""</item>
+    <item>"import android.content.Context;"</item>
+    <item>"import android.util.AttributeSet;"</item>
+    <item>"import android.widget.TextView;"</item>
+    <item>""</item>
+    <item>"import uk.co.ataulm.mijur.R;"</item>
+    <item>""</item>
+    <item>"public class MijurTextView extends TextView {"</item>
+    <item>""</item>
+    <item>"    private final FontWriter fontWriter;"</item>
+    <item>""</item>
+    <item>"    public MijurTextView(Context context, AttributeSet attrs) {"</item>
+    <item>"        super(context, attrs);"</item>
+    <item>"        fontWriter = FontWriter.create(this, attrs, R.styleable.MijurTextView);"</item>
+    <item>"        init();"</item>
+    <item>"    }"</item>
+    <item>""</item>
+    <item>"    public MijurTextView(Context context, AttributeSet attrs, int defStyle) {"</item>
+    <item>"        super(context, attrs, defStyle);"</item>
+    <item>"        fontWriter = FontWriter.create(this, attrs, R.styleable.MijurTextView);"</item>
+    <item>"        init();"</item>
+    <item>"    }"</item>
+    <item>""</item>
+    <item>"    private void init() {"</item>
+    <item>"        setCustomFont(R.styleable.MijurTextView_font);"</item>
+    <item>"    }"</item>
+    <item>""</item>
+    <item>"    private void setCustomFont(int customFontId) {"</item>
+    <item>"        fontWriter.setCustomFont(customFontId);"</item>
+    <item>"    }"</item>
+    <item>""</item>
+    <item>"    public void setCustomFont(String customFontName) {"</item>
+    <item>"        fontWriter.setCustomFont(customFontName);"</item>
+    <item>"    }"</item>
+    <item>"}"</item>
+    <item>""</item>
+  </string-array>
+</resources>

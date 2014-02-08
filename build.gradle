@@ -1,0 +1,27 @@
+subprojects {
+    buildscript {
+        repositories {
+            mavenCentral()
+            maven {
+                url "https://oss.sonatype.org/content/repositories/snapshots"
+            }
+            maven {
+                url 'https://github.com/novoda/public-mvn-repo/raw/master/releases'
+            }
+        }
+
+        dependencies {
+            classpath 'com.android.tools.build:gradle:0.6.+'
+        }
+    }
+
+    repositories {
+        maven {
+            url "https://oss.sonatype.org/content/repositories/snapshots"
+        }
+        maven {
+            url 'https://github.com/novoda/public-mvn-repo/raw/master/releases'
+        }
+        mavenCentral()
+    }
+}
