@@ -4,9 +4,9 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.ataulm.gertherb.base.GertHerbActivity;
+import com.ataulm.gertherb.base.Activity;
 
-public class ReviewActivity extends GertHerbActivity {
+public class ReviewActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,4 +1,4 @@
-package com.ataulm.gertherb.base;
+package com.ataulm;
 
 import android.content.Context;
 import android.content.res.AssetManager;

@@ -1,10 +1,9 @@
 package com.ataulm.gertherb.base;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Toast;
 
-public abstract class GertHerbActivity extends Activity {
+public abstract class Activity extends android.app.Activity {
 
     private ViewServerManager viewServerManager;
 

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.util.AttributeSet;
 
 import com.ataulm.gertherb.R;
-import com.ataulm.gertherb.base.FontWriter;
 
 public class TextView extends android.widget.TextView {
 
