@@ -14,7 +14,7 @@ public class ReviewActivity extends Activity {
         setContentView(R.layout.activity_review);
 
         String[] code = getResources().getStringArray(R.array.dummy_code);
-        ArrayAdapter adapter = new ArrayAdapter(this, R.layout.list_item_code, R.id.textview_line, code);
+        ArrayAdapter adapter = new ArrayAdapter(this, R.layout.list_item_code, R.id.textview_line_of_code, code);
         ((ListView) findViewById(R.id.listview_code)).setAdapter(adapter);
     }
 

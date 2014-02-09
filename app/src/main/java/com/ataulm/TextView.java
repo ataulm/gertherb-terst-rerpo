@@ -9,6 +9,11 @@ public class TextView extends android.widget.TextView {
 
     private final FontWriter fontWriter;
 
+    public TextView(Context context) {
+        super(context);
+        fontWriter = FontWriter.create(this, null, R.styleable.TextView);
+    }
+
     public TextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         fontWriter = FontWriter.create(this, attrs, R.styleable.TextView);

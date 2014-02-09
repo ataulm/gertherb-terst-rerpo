@@ -39,4 +39,5 @@
     <item>"}"</item>
     <item>""</item>
   </string-array>
+  <string name="dummy_longest_line">"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"</string>
 </resources>
