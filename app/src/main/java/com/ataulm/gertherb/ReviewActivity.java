@@ -1,10 +1,9 @@
 package com.ataulm.gertherb;
 
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
 import com.ataulm.gertherb.base.Activity;
+import com.ataulm.gertherb.base.CodeViewAdapter;
 
 public class ReviewActivity extends Activity {
 
@@ -13,9 +12,9 @@ public class ReviewActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_review);
 
-        String[] code = getResources().getStringArray(R.array.dummy_code);
-        ArrayAdapter adapter = new ArrayAdapter(this, R.layout.list_item_code, R.id.textview_line_of_code, code);
-        ((ListView) findViewById(R.id.listview_code)).setAdapter(adapter);
+        CodeView codeView = ((CodeView) findViewById(R.id.listview_code));
+        codeView.setLongestLine(getResources().getString(R.string.dummy_longest_line));
+        codeView.setAdapter(new CodeViewAdapter(this, getResources().getStringArray(R.array.dummy_code)));
     }
 
 }

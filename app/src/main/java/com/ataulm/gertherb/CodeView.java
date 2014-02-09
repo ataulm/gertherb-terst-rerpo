@@ -9,20 +9,12 @@ import android.widget.ListView;
 
 import com.ataulm.TextView;
 
-public class CodeReviewView extends ListView {
+public class CodeView extends ListView {
 
     private int width;
 
-    public CodeReviewView(Context context) {
-        super(context);
-    }
-
-    public CodeReviewView(Context context, AttributeSet attrs) {
+    public CodeView(Context context, AttributeSet attrs) {
         super(context, attrs);
-    }
-
-    public CodeReviewView(Context context, AttributeSet attrs, int defStyle) {
-        super(context, attrs, defStyle);
     }
 
     public void setLongestLine(String line) {
@@ -47,7 +39,6 @@ public class CodeReviewView extends ListView {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        setLongestLine(getResources().getString(R.string.dummy_longest_line));
         setMeasuredDimension(width, MeasureSpec.getSize(heightMeasureSpec));
     }
 }

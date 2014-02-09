@@ -5,7 +5,7 @@
   android:fillViewport="true"
   android:background="@android:color/holo_orange_dark">
 
-  <com.ataulm.gertherb.CodeReviewView
+  <com.ataulm.gertherb.CodeView
     android:id="@+id/listview_code"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
