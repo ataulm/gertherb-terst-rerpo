@@ -1,4 +1,4 @@
-package com.ataulm.gertherb.base;
+package com.gertherb.base;
 
 import android.app.Activity;
 

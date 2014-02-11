@@ -1,9 +1,9 @@
-package com.ataulm.gertherb;
+package com.gertherb;
 
 import android.os.Bundle;
 
-import com.ataulm.gertherb.base.GertHerbActivity;
-import com.ataulm.gertherb.base.CodeViewAdapter;
+import com.ataulm.gertherb.R;
+import com.gertherb.base.GertHerbActivity;
 
 public class ReviewActivity extends GertHerbActivity {
 

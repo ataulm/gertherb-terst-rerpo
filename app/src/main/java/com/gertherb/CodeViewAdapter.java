@@ -1,4 +1,4 @@
-package com.ataulm.gertherb.base;
+package com.gertherb;
 
 import android.content.Context;
 import android.view.LayoutInflater;

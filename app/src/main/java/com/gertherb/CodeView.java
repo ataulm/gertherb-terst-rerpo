@@ -1,4 +1,4 @@
-package com.ataulm.gertherb;
+package com.gertherb;
 
 import android.content.Context;
 import android.graphics.Paint;
@@ -7,6 +7,8 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.ataulm.gertherb.R;
 
 public class CodeView extends ListView {
 
