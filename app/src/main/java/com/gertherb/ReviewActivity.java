@@ -2,7 +2,6 @@ package com.gertherb;
 
 import android.os.Bundle;
 
-import com.ataulm.gertherb.R;
 import com.gertherb.base.GertHerbActivity;
 
 public class ReviewActivity extends GertHerbActivity {

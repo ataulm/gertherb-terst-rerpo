@@ -8,8 +8,6 @@ import android.view.LayoutInflater;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.ataulm.gertherb.R;
-
 public class CodeView extends ListView {
 
     private int width;
