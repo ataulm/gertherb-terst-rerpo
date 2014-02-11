@@ -12,23 +12,23 @@ public class GertHerbTextView extends TextView {
 
     public GertHerbTextView(Context context) {
         super(context);
-        fontWriter = FontWriter.create(this, null, R.styleable.TextView);
+        fontWriter = FontWriter.create(this, null, R.styleable.GertHerbTextView);
     }
 
     public GertHerbTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        fontWriter = FontWriter.create(this, attrs, R.styleable.TextView);
+        fontWriter = FontWriter.create(this, attrs, R.styleable.GertHerbTextView);
         init();
     }
 
     public GertHerbTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        fontWriter = FontWriter.create(this, attrs, R.styleable.TextView);
+        fontWriter = FontWriter.create(this, attrs, R.styleable.GertHerbTextView);
         init();
     }
 
     private void init() {
-        setCustomFont(R.styleable.TextView_font);
+        setCustomFont(R.styleable.GertHerbTextView_font);
     }
 
     private void setCustomFont(int customFontId) {
