@@ -2,10 +2,10 @@ package com.ataulm.gertherb;
 
 import android.os.Bundle;
 
-import com.ataulm.gertherb.base.Activity;
+import com.ataulm.gertherb.base.GertHerbActivity;
 import com.ataulm.gertherb.base.CodeViewAdapter;
 
-public class ReviewActivity extends Activity {
+public class ReviewActivity extends GertHerbActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

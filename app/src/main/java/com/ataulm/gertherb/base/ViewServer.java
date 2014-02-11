@@ -55,7 +55,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * they are created, and to unregister them when they get destroyed:</p>
  * <p/>
  * <pre>
- * public class MyActivity extends Activity {
+ * public class MyActivity extends GertHerbActivity {
  *     public void onCreate(Bundle savedInstanceState) {
  *         super.onCreate(savedInstanceState);
  *         // Set content view, etc.

@@ -2,25 +2,26 @@ package com.ataulm;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.widget.TextView;
 
 import com.ataulm.gertherb.R;
 
-public class TextView extends android.widget.TextView {
+public class GertHerbTextView extends TextView {
 
     private final FontWriter fontWriter;
 
-    public TextView(Context context) {
+    public GertHerbTextView(Context context) {
         super(context);
         fontWriter = FontWriter.create(this, null, R.styleable.TextView);
     }
 
-    public TextView(Context context, AttributeSet attrs) {
+    public GertHerbTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         fontWriter = FontWriter.create(this, attrs, R.styleable.TextView);
         init();
     }
 
-    public TextView(Context context, AttributeSet attrs, int defStyle) {
+    public GertHerbTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         fontWriter = FontWriter.create(this, attrs, R.styleable.TextView);
         init();
