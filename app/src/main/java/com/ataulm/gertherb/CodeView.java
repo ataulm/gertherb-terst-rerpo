@@ -6,8 +6,7 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.ListView;
-
-import com.ataulm.TextView;
+import android.widget.TextView;
 
 public class CodeView extends ListView {
 
