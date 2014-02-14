@@ -1,4 +1,4 @@
-package com.ataulm.gertherb;
+package com.gertherb;
 
 public class DeveloperError extends Error {
 

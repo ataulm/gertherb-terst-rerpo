@@ -1,8 +1,8 @@
-package com.ataulm.gertherb.base;
+package com.gertherb.base;
 
 import android.app.Activity;
 
-import com.ataulm.gertherb.BuildConfig;
+import com.gertherb.BuildConfig;
 
 public class ViewServerManager {
 

@@ -1,13 +1,11 @@
-package com.ataulm.gertherb.base;
+package com.gertherb;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-
-import com.ataulm.TextView;
-import com.ataulm.gertherb.R;
+import android.widget.TextView;
 
 public class CodeViewAdapter extends BaseAdapter {
 
