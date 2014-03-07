@@ -4,7 +4,7 @@
 
 The [Wiki][wiki] outlines MVP features. TODO: determine stories and list them, grouping by feature (epic).
 
-[wiki]: https://github.com/ataulm/gertherb/wiki
+[wiki]: ../../wiki
 
 __People say about this app:__
 > _They suck so bad, but the app looks amazing!_ (seen on TechCrunch, December 2020)
