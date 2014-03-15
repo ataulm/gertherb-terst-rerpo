@@ -19,14 +19,16 @@ android {
             proguardFile 'proguard-rules.txt'
         }
     }
+
+    lintOptions {
+        ignore 'InvalidPackage'
+    }
 }
 
 dependencies {
     compile 'com.novoda:notils:2.2.+',
             'com.novoda.rx:android:0.0.2-SNAPSHOT',
             'com.novoda.rx:core:0.0.2-SNAPSHOT',
-            'com.netflix.rxjava:rxjava-android:0.17.1',
-            'com.squareup.retrofit:retrofit:1.4.1',
-            'com.squareup.okhttp:okhttp:1.3.0'
+            'com.netflix.rxjava:rxjava-android:0.17.1'
     compile project(':core')
 }
