@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  <string name="app_name">gertherb</string>
+  <dimen name="login_gutter">64dp</dimen>
 
 </resources>

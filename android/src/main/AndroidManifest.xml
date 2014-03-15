@@ -10,16 +10,21 @@
     android:targetSdkVersion="19" />
 
   <application
+    android:name=".GertHerbApplication"
     android:allowBackup="true"
     android:label="@string/app_name"
     android:icon="@drawable/ic_launcher"
-    android:theme="@style/AppTheme">
+    android:theme="@style/Gertherb">
 
-    <activity android:name="com.gertherb.ReviewActivity">
+    <activity
+      android:name=".login.LoginActivity"
+      android:label="@string/label_login"
+      android:theme="@style/Gertherb.Login">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
   </application>
+
 </manifest>
