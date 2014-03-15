@@ -2,13 +2,16 @@ package com.gertherb.login;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.gertherb.R;
 import com.novoda.notils.caster.Views;
+import com.novoda.notils.meta.AndroidUtils;
 
 import rx.Observable;
 import rx.android.observables.ViewObservable;
@@ -40,6 +43,17 @@ public class LoginView extends LinearLayout {
         username = Views.findById(this, R.id.login_edit_username);
         password = Views.findById(this, R.id.login_edit_password);
         login = Views.findById(this, R.id.login_button);
+
+        password.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                AndroidUtils.requestHideKeyboard(getContext(), v);
+                login.performClick();
+                return true;
+            }
+
+        });
     }
 
     public Observable<UserCredentials> newLoginObservable() {

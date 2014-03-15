@@ -18,6 +18,7 @@
   </style>
 
   <style name="Gertherb.Login.Password" parent="Gertherb.EditText">
+    <item name="android:imeOptions">actionGo</item>
     <item name="android:inputType">textPassword</item>
     <item name="android:singleLine">true</item>
     <item name="android:hint">@string/login_hint_password</item>

@@ -5,13 +5,13 @@
 
   <com.gertherb.view.FontEditText
     style="@style/Gertherb.Login.Username"
-    android:id="@+id/login_edit_password"
+    android:id="@+id/login_edit_username"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
 
   <com.gertherb.view.FontEditText
     style="@style/Gertherb.Login.Password"
-    android:id="@+id/login_edit_username"
+    android:id="@+id/login_edit_password"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
 
