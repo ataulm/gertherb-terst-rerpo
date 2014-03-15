@@ -7,4 +7,7 @@
   <color name="app">@color/blue</color>
   <color name="app_accent">@color/orange</color>
   <color name="app_background">@android:color/white</color>
+
+  <color name="button_text">@android:color/white</color>
+
 </resources>
