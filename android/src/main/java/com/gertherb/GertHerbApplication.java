@@ -1,4 +1,4 @@
-package com.gertherb.base;
+package com.gertherb;
 
 import android.app.Application;
 
