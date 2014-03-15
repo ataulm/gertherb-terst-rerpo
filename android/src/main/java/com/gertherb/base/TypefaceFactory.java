@@ -14,8 +14,8 @@ public class TypefaceFactory {
 
     public enum FontType {
 
-        ROBOTO_SLAB("fonts/RobotoSlab-Regular.ttf"),
-        ROBOTO_LIGHT("fonts/Roboto-Light.ttf");
+        ROBOTO_SLAB_REGULAR("fonts/RobotoSlab-Regular.ttf"),
+        ROBOTO_SLAB_BOLD("fonts/RobotoSlab-Bold.ttf");
 
         private final String assetUrl;
 

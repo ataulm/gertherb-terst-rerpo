@@ -12,17 +12,15 @@
   <style name="Gertherb.Button">
     <item name="android:background">@drawable/button_background</item>
     <item name="android:textColor">@color/button_text</item>
+    <item name="android:minHeight">@dimen/button_height</item>
+    <item name="android:textSize">@dimen/button_text</item>
+    <item name="font">robotoSlabBold</item>
   </style>
 
   <style name="Gertherb.EditText">
     <item name="android:background">@drawable/edittext_background</item>
-  </style>
-
-  <style name="Gertherb.Login.LoginView">
-    <item name="android:gravity">center</item>
-    <item name="android:orientation">vertical</item>
-    <item name="android:paddingLeft">@dimen/gutter</item>
-    <item name="android:paddingRight">@dimen/gutter</item>
+    <item name="android:textColorHint">@color/hint_text</item>
+    <item name="font">robotoSlabRegular</item>
   </style>
 
 </resources>

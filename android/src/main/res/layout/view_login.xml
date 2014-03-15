@@ -3,23 +3,22 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent">
 
-  <EditText
+  <com.gertherb.view.FontEditText
     style="@style/Gertherb.Login.Username"
     android:id="@+id/login_edit_password"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
 
-  <EditText
+  <com.gertherb.view.FontEditText
     style="@style/Gertherb.Login.Password"
     android:id="@+id/login_edit_username"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
 
-  <Button
-    style="@style/Gertherb.Button"
+  <com.gertherb.view.FontButton
+    style="@style/Gertherb.Login.LoginButton"
     android:id="@+id/login_button"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/login" />
+    android:layout_height="wrap_content" />
 
 </merge>
