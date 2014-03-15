@@ -2,7 +2,7 @@ apply plugin: 'android'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19.0.1"
+    buildToolsVersion "19.0.3"
 
     defaultConfig {
         minSdkVersion 14
@@ -22,5 +22,5 @@ android {
 }
 
 dependencies {
-    compile 'com.novoda:notils:2.2.1'
+    compile 'com.novoda:notils:2.2.+'
 }
