@@ -48,7 +48,6 @@ public class LoginView extends LinearLayout {
 
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                AndroidUtils.requestHideKeyboard(getContext(), v);
                 login.performClick();
                 return true;
             }
@@ -61,6 +60,7 @@ public class LoginView extends LinearLayout {
 
             @Override
             public UserCredentials call(View view) {
+                AndroidUtils.requestHideKeyboard(getContext(), view);
                 return new UserCredentials(username.getText().toString(), password.getText().toString());
             }
 
