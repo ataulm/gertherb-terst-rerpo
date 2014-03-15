@@ -2,15 +2,18 @@ package com.gertherb.base;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.Toast;
+
+import com.novoda.notils.logger.toast.Toaster;
 
 public abstract class GertHerbActivity extends Activity {
 
+    private Toaster toaster;
     private ViewServerManager viewServerManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        toaster = new Toaster(this);
         viewServerManager = new ViewServerManager(this);
         viewServerManager.onCreate();
     }
@@ -28,7 +31,7 @@ public abstract class GertHerbActivity extends Activity {
     }
 
     protected void toast(int messageResId) {
-        Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show();
+        toaster.popToast(messageResId);
     }
 
 }
