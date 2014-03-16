@@ -2,10 +2,10 @@ package com.gertherb.api.shared
 
 class CredentialsPropertiesLoader {
 
-    private final ArrayList<String> propertiesNeeded
+    private final List<String> propertiesNeeded
     private final String propertiesPath
 
-    CredentialsPropertiesLoader(String propertiesPath, ArrayList<String> propertiesNeeded) {
+    CredentialsPropertiesLoader(String propertiesPath, List<String> propertiesNeeded) {
         this.propertiesNeeded = propertiesNeeded
         this.propertiesPath = propertiesPath
     }
