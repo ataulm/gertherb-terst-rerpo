@@ -24,3 +24,5 @@ build
 # backup files end in tilde (edit)
 *.*~
 
+credentials.properties
+
