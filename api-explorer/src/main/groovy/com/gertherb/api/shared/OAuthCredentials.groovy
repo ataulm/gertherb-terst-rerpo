@@ -1,6 +1,6 @@
 package com.gertherb.api.shared
 
-public class OAuthCredentials extends Credentials {
+class OAuthCredentials extends Credentials {
 
     private static final String X_OAUTH_BASIC = "x-oauth-basic"
 

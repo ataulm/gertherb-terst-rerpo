@@ -1,8 +1,8 @@
 package com.gertherb.api.shared
 
-public class Credentials {
+class Credentials {
 
-    public static final String CREDENTIALS_PROPERTIES_PATH = "${System.getProperty('user.dir')}/credentials.properties"
+    static final String CREDENTIALS_PROPERTIES_PATH = "${System.getProperty('user.dir')}/credentials.properties"
 
     def clientId
     def clientSecret

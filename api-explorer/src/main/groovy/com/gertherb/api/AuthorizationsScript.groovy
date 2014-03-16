@@ -1,4 +1,5 @@
 package com.gertherb.api
+
 import com.gertherb.api.shared.ApiScript
 import com.gertherb.api.shared.Credentials
 import com.gertherb.api.shared.OAuthCredentials
@@ -47,7 +48,7 @@ class AuthorizationsScript extends ApiScript {
         OAuthCredentials.saveToken(json.token)
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         new AuthorizationsScript().execute()
     }
 

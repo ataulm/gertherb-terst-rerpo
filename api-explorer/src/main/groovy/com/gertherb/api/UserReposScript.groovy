@@ -31,7 +31,7 @@ class UserReposScript extends ApiScript {
         return credentials.getBasicAuthorizationValue()
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         new UserReposScript().execute()
     }
 
