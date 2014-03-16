@@ -10,7 +10,7 @@ class OAuthCredentials extends Credentials {
 
     static OAuthCredentials load() {
         Properties properties = new CredentialsPropertiesLoader(CREDENTIALS_PROPERTIES_PATH, ['clientId', 'clientSecret', 'token']).load()
-        return new OAuthCredentials(
+        new OAuthCredentials(
                 properties.clientId,
                 properties.clientSecret,
                 properties.token

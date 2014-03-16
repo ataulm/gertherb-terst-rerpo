@@ -48,17 +48,17 @@ abstract class ApiScript {
     abstract String path()
 
     Method method() {
-        return Method.GET
+        Method.GET
     }
 
     ContentType contentType() {
-        return ContentType.JSON
+        ContentType.JSON
     }
 
     abstract String authorization()
 
     Object body() {
-        return null
+        null
     }
 
     void onSuccess(resp, json, long startAt) {

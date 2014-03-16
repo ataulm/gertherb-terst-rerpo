@@ -11,31 +11,31 @@ class AuthorizationsScript extends ApiScript {
 
     @Override
     String description() {
-        return  "This method will create a new authorization for the specified OAuth application, " +
-                "only if an authorization for that application doesn’t already exist for the user. " +
-                "(The URL includes the 20 character client ID for the OAuth app that is requesting " +
-                "the token.) It returns the user’s token for the application if one exists. " +
-                "Otherwise, it creates one."
+        "This method will create a new authorization for the specified OAuth application, " +
+        "only if an authorization for that application doesn’t already exist for the user. " +
+        "(The URL includes the 20 character client ID for the OAuth app that is requesting " +
+        "the token.) It returns the user’s token for the application if one exists. " +
+        "Otherwise, it creates one."
     }
 
     @Override
     String path() {
-        return "/authorizations/clients/${credentials.getClientId()}"
+        "/authorizations/clients/${credentials.getClientId()}"
     }
 
     @Override
     Method method() {
-        return Method.PUT
+        Method.PUT
     }
 
     @Override
     String authorization() {
-        return credentials.getBasicAuthorizationValue()
+        credentials.getBasicAuthorizationValue()
     }
 
     @Override
     Object body() {
-        return [
+        [
                 client_secret: credentials.clientSecret,
                 scopes       : ['repo'],
                 note         : 'Gertherb'

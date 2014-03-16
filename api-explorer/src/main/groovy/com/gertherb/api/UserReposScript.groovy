@@ -11,24 +11,24 @@ class UserReposScript extends ApiScript {
 
     @Override
     String description() {
-        return  "List repositories for the authenticated user. Note that this does not include repositories " +
-                "owned by organizations which the user can access. You can list user organizations and list " +
-                "organization repositories separately."
+        "List repositories for the authenticated user. Note that this does not include repositories " +
+        "owned by organizations which the user can access. You can list user organizations and list " +
+        "organization repositories separately."
     }
 
     @Override
     String path() {
-        return "/user/repos"
+        "/user/repos"
     }
 
     @Override
     ContentType contentType() {
-        return ContentType.JSON
+        ContentType.JSON
     }
 
     @Override
     def String authorization() {
-        return credentials.getBasicAuthorizationValue()
+        credentials.getBasicAuthorizationValue()
     }
 
     static void main(String[] args) {

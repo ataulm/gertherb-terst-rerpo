@@ -18,12 +18,12 @@ class Credentials {
 
     String getBasicAuthorizationValue() {
         String basic = "${username}:${password}"
-        return basic.bytes.encodeBase64()
+        basic.bytes.encodeBase64()
     }
 
     static Credentials load() {
         Properties properties = new CredentialsPropertiesLoader(CREDENTIALS_PROPERTIES_PATH, ['clientId', 'clientSecret', 'username', 'password']).load()
-        return new Credentials(
+        new Credentials(
                 properties.clientId,
                 properties.clientSecret,
                 properties.username,

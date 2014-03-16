@@ -14,14 +14,14 @@ class CredentialsPropertiesLoader {
         File file = getPropertiesFile()
         Properties properties = loadProperties(file)
         checkPropertiesAreValid(properties)
-        return properties
+        properties
     }
 
 
     private Properties loadProperties(File file) {
         Properties properties = new Properties()
         properties.load(new FileInputStream(file))
-        return properties
+        properties
     }
 
     private File getPropertiesFile() {
@@ -29,7 +29,7 @@ class CredentialsPropertiesLoader {
         if (!file.exists()) {
             throw new InvalidCredentialsException("You need to put a property file containing the credentials needed for the app in ${propertiesPath}")
         }
-        return file
+        file
     }
 
     private void checkPropertiesAreValid(Properties properties) {
