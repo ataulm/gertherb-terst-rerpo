@@ -29,7 +29,7 @@ abstract class ApiScript {
             }
 
             body = body()
-            println '\nBODY:\n' + new JsonBuilder(body).toPrettyString()
+            println "\nBODY:\n ${new JsonBuilder(body).toPrettyString()}"
 
             println '\n\nL O A D I N G . . .\n-------------------------------'
             long startAt = System.currentTimeMillis()

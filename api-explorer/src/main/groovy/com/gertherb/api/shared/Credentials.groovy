@@ -2,7 +2,7 @@ package com.gertherb.api.shared
 
 public class Credentials {
 
-    public static final String CREDENTIALS_PROPERTIES_PATH = System.getProperty('user.dir') + '/credentials.properties'
+    public static final String CREDENTIALS_PROPERTIES_PATH = "${System.getProperty('user.dir')}/credentials.properties"
 
     def clientId
     def clientSecret
@@ -17,7 +17,7 @@ public class Credentials {
     }
 
     String getBasicAuthorizationValue() {
-        String basic = username + ':' + password
+        String basic = "${username}:${password}"
         return basic.bytes.encodeBase64()
     }
 
