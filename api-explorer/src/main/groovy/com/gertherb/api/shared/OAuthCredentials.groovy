@@ -18,7 +18,7 @@ public class OAuthCredentials extends Credentials {
     }
 
     static void saveToken(token) {
-        new CredentialsPropertiesLoader(CREDENTIALS_PROPERTIES_PATH, ['clientId', 'clientSecret']).save('token', token);
+        new CredentialsPropertiesLoader(CREDENTIALS_PROPERTIES_PATH, ['clientId', 'clientSecret']).save('token', token)
     }
 
 }

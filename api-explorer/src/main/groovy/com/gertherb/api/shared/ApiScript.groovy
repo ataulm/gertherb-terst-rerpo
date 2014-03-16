@@ -9,7 +9,7 @@ import groovyx.net.http.Method
 abstract class ApiScript {
 
     void execute() {
-        HTTPBuilder http = new HTTPBuilder('https://api.github.com');
+        HTTPBuilder http = new HTTPBuilder('https://api.github.com')
         def method = method()
         def contentType = contentType()
         http.request(method, contentType) {
@@ -72,8 +72,7 @@ abstract class ApiScript {
     }
 
     void printResponseDetails(resp, label, long startAt) {
-        TimeDuration duration = TimeCategory.minus(new Date(), new Date(startAt));
-
+        TimeDuration duration = TimeCategory.minus(new Date(), new Date(startAt))
         println '\n\nR E S P O N S E:\n-------------------------------'
         println "${label}:\n\t${resp.statusLine} after ${duration}, response length: ${resp.headers.'Content-Length'}"
     }

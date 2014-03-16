@@ -18,7 +18,7 @@ public class Credentials {
 
     String getBasicAuthorizationValue() {
         String basic = username + ':' + password
-        return basic.bytes.encodeBase64();
+        return basic.bytes.encodeBase64()
     }
 
     static Credentials load() {
