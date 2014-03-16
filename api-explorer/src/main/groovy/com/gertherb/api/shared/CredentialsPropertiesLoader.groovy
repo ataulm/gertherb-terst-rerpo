@@ -43,7 +43,7 @@ class CredentialsPropertiesLoader {
         }
     }
 
-    void save(String property, value) {
+    void save(String property, String value) {
         File file = getPropertiesFile()
         Properties properties = loadProperties(file)
         properties.put(property, value)
