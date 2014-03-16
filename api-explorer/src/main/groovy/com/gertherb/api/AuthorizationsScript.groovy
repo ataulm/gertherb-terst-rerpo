@@ -50,4 +50,5 @@ class AuthorizationsScript extends ApiScript {
     public static void main(String[] args) {
         new AuthorizationsScript().execute()
     }
+
 }

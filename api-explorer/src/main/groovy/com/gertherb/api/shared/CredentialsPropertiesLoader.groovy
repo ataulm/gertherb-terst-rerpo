@@ -51,5 +51,4 @@ class CredentialsPropertiesLoader {
         properties.store(new FileWriter(file), "")
     }
 
-
 }
