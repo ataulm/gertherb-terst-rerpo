@@ -17,7 +17,7 @@ class Credentials {
     }
 
     String getBasicAuthorizationValue() {
-        String basic = "${username}:${password}"
+        String basic = "$username:$password"
         basic.bytes.encodeBase64()
     }
 

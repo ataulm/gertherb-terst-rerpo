@@ -18,7 +18,7 @@ class CredentialsPropertiesLoader {
     }
 
 
-    private Properties loadProperties(File file) {
+    private static Properties loadProperties(File file) {
         Properties properties = new Properties()
         properties.load(new FileInputStream(file))
         properties
@@ -27,18 +27,18 @@ class CredentialsPropertiesLoader {
     private File getPropertiesFile() {
         File file = new File(propertiesPath)
         if (!file.exists()) {
-            throw new InvalidCredentialsException("You need to put a property file containing the credentials needed for the app in ${propertiesPath}")
+            throw new InvalidCredentialsException("You need to put a property file containing the credentials needed for the app in $propertiesPath")
         }
         file
     }
 
     private void checkPropertiesAreValid(Properties properties) {
-        propertiesNeeded.collect {
-            if (!properties.containsKey(it)) {
-                throw new InvalidCredentialsException("'${it}' property is not defined in ${propertiesPath}")
+        propertiesNeeded.each { property ->
+            if (!properties.containsKey(property)) {
+                throw new InvalidCredentialsException("'$property' property is not defined in $propertiesPath")
             }
-            if (!properties.getProperty(it)) {
-                throw new InvalidCredentialsException("No value is defined for '${it}' in ${propertiesPath}")
+            if (!properties.getProperty(property)) {
+                throw new InvalidCredentialsException("No value is defined for '$property' in $propertiesPath")
             }
         }
     }

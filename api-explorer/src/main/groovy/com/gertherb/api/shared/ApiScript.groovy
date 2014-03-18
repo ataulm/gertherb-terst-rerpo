@@ -18,14 +18,14 @@ abstract class ApiScript {
             println "${description()}\n"
 
             uri.path = path()
-            println "URL:\n\t${method} ${uri}"
+            println "URL:\n\t$method $uri"
 
             headers['Accept'] = 'application/vnd.github.v3+json'
             headers['User-Agent'] = 'Gertherb'
             headers['Authorization'] = "Basic ${authorization()}"
             println "\nHEADERS:"
-            headers.collect {
-                println "\t${it.getKey()} : ${it.getValue()}"
+            headers.each {
+                entry -> println "\t${entry.key} : ${entry.value}"
             }
 
             body = body()
@@ -74,7 +74,7 @@ abstract class ApiScript {
     void printResponseDetails(resp, label, long startAt) {
         TimeDuration duration = TimeCategory.minus(new Date(), new Date(startAt))
         println '\n\nR E S P O N S E:\n-------------------------------'
-        println "${label}:\n\t${resp.statusLine} after ${duration}, response length: ${resp.headers.'Content-Length'}"
+        println "$label:\n\t${resp.statusLine} after $duration, response length: ${resp.headers.'Content-Length'}"
     }
 
     private printResponseContent(json) {
