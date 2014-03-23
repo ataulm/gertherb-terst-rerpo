@@ -20,7 +20,7 @@ abstract class ApiScript {
             uri.path = path()
             println "URL:\n\t$method $uri"
 
-            headers['Accept'] = 'application/vnd.github.v3+json'
+            headers['Accept'] = accept()
             headers['User-Agent'] = 'Gertherb'
             headers['Authorization'] = "Basic ${authorization()}"
             println "\nHEADERS:"
@@ -43,6 +43,10 @@ abstract class ApiScript {
 
     String description() {
         ''
+    }
+
+    String accept() {
+        'application/vnd.github.v3+json'
     }
 
     abstract String path()
