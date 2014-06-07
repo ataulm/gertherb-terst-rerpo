@@ -6,13 +6,11 @@ buildscript {
         maven {
             url "https://oss.sonatype.org/content/repositories/snapshots"
         }
-        maven {
-            url "https://github.com/novoda/public-mvn-repo/raw/master/releases"
-        }
     }
 
     dependencies {
         classpath 'com.android.tools.build:gradle:0.9.+'
+        classpath new line
         classpath 'com.novoda:gradle-android-command-plugin:0.9.0-SNAPSHOT'
     }
 }
@@ -28,7 +26,7 @@ android {
     buildTypes {
         release {
             runProguard false
-            proguardFile getDefaultProguardFile('proguard-android.txt')
+            proguardFile g changedline ProguardFile('proguard-android.txt')
         }
     }
     productFlavors {
